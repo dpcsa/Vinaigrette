@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Vinaigrette</string>
+
+    <string name="youtube_api_key">AIzaSyBXIkt2yT92DWzjRLs3n9oPcd2B7iKRzfs</string>
+
+    // NETWORK ERROR
+    <string name="er_title_def">Внимание !</string>
+    <string name="er_message">Ошибка в тексте сообщения сервера</string>
+    <string name="er_connect_title">Отсутствует интернет</string>
+    <string name="er_connect">Проверьте ваш доступ к WI-FI или настройки мобильного соединения</string>
+    <string name="er_timeout">Долго не приходит ответ с сервера</string>
+    <string name="er_server_error">Ошибка сервера</string>
+    <string name="er_json_syntax">Синтаксическая ошибка в json</string>
+
+    <string name="contin">Продолжить</string>
 </resources>
