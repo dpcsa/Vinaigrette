@@ -4,7 +4,8 @@ import com.dpcsa.compon.base.DeclareScreens;
 
 public class MyDeclareScreens extends DeclareScreens {
 
-    public final static String SPLASH = "splash", TUTORIAL = "tutorial", AUTH = "auth", MAIN = "main";
+    public final static String SPLASH = "splash", TUTORIAL = "tutorial", AUTH = "auth", MAIN = "main",
+            AUTH_PHONE = "AUTH_PHONE", AUTH_CODE = "AUTH_CODE";
 
     @Override
     public void declare() {
@@ -12,24 +13,27 @@ public class MyDeclareScreens extends DeclareScreens {
                 .componentSplash(TUTORIAL, AUTH, MAIN);
 
         activity(TUTORIAL, R.layout.activity_tutorial)
-                .component(TC.PAGER_V, model(Api.TUTORIAL)
-                                .internetProvider(TestInternetProvider.class),
-                        new ParamView(R.id.pager, R.layout.item_tutorial)
+                .component(TC.PAGER_V,
+                        model(JSON, getString(R.string.json_tutorial)),
+                        view(R.id.pager, R.layout.item_tutorial)
                                 .visibilityManager(visibility(R.id.contin, "contin"),
                                         visibility(R.id.proceed, "proceed"))
                                 .setIndicator(R.id.indicator).setFurtherView(R.id.further),
-                        new Navigator().add(R.id.skip, context.getString(R.string.tutorial), true)
-                                .add(R.id.skip, context.getString(R.string.auth))
-                                .add(R.id.skip, ViewHandler.TYPE.BACK)
-                                .add(R.id.proceed, context.getString(R.string.tutorial), true)
-                                .add(R.id.proceed, context.getString(R.string.auth))
-                                .add(R.id.proceed, ViewHandler.TYPE.BACK)
-                                .add(R.id.contin, ViewHandler.TYPE.PAGER_PLUS));
-
-        activity(context.getString(R.string.auth), R.layout.activity_auth)
-                .addFragmentsContainer(R.id.content_frame, context.getString(R.string.auth_phone));
+                        navigator(
+                                start(R.id.skip, AUTH, true),
+                                back(R.id.skip),
+                                start(R.id.proceed, AUTH, true),
+                                back(R.id.proceed), handler(R.id.contin, VH.PAGER_PLUS)));
 
 
+        activity(AUTH, R.layout.activity_auth)
+                .fragmentsContainer(R.id.content_frame, AUTH_PHONE);
+
+        fragment(AUTH_PHONE, R.layout.fragment_auth_phone)
+                .component(TC.PANEL_ENTER, null,
+                        view(R.id.panel),
+                        navigator(handler(R.id.done, VH.CLICK_SEND, model(POST, Api.LOGIN_PHONE, "phone"),
+                                after(start(AUTH_CODE)), true, R.id.phone)), 0);
 
 
         activity(MAIN, R.layout.activity_main);

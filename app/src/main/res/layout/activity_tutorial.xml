@@ -12,12 +12,12 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/indicator" />
 
-    <net.ukr.jura.compon.custom_components.PagerIndicator
+    <com.dpcsa.compon.custom_components.PagerIndicator
         android:id="@+id/indicator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/further"
-        app:diametrItem="@dimen/pad_6"
+        app:diametrItem="@dimen/pad_8"
         app:itemSelectId="@drawable/circle_primary"
         app:itemId="@drawable/circle_gray" />
 
