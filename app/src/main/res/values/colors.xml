@@ -14,4 +14,9 @@
 
     <color name="white">#fff</color>
     <color name="text">#333</color>
+    <color name="green_teal">#0ab861</color>
+    <color name="gunmetal">#515554</color>
+    <color name="charcoal">#262a29</color>
+    <color name="gunmetal_40">#65515554</color>
+    <color name="charcoal_40">#65262a29</color>
 </resources>

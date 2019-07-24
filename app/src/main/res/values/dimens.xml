@@ -5,6 +5,7 @@
     <dimen name="h_button">45dp</dimen>
     <dimen name="h_bar">46dp</dimen>
     <dimen name="h_video">230dp</dimen>
+    <dimen name="h_bottom">50dp</dimen>
 
     <dimen name="pad_1">1dp</dimen>
     <dimen name="pad_3">3dp</dimen>
