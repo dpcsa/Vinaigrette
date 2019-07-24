@@ -25,7 +25,6 @@ public class MyDeclareScreens extends DeclareScreens {
                                 start(R.id.proceed, AUTH, true),
                                 back(R.id.proceed), handler(R.id.contin, VH.PAGER_PLUS)));
 
-
         activity(AUTH, R.layout.activity_auth)
                 .fragmentsContainer(R.id.content_frame, AUTH_PHONE);
 
