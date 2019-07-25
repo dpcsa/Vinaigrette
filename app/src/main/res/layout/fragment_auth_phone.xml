@@ -97,6 +97,18 @@
             android:layout_marginLeft="@dimen/pad_36"
             android:layout_marginRight="@dimen/pad_36"
             android:text="@string/enter"/>
+
+        <TextView
+            android:id="@+id/enter_skip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_button"
+            android:layout_marginTop="@dimen/pad_40"
+            android:gravity="center"
+            android:text="@string/enter_skip"
+            android:textColor="@color/green_teal"
+            android:textSize="@dimen/pad_16"/>
+
+
     </LinearLayout>
 
     <!--<TextView-->

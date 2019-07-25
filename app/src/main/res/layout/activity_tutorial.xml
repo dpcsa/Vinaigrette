@@ -38,6 +38,7 @@
             android:layout_marginTop="@dimen/pad_30"
             android:background="@drawable/selector_button_enabled"
             android:elevation="@dimen/pad_6"
+            android:text="@string/contin"
             android:gravity="center"
             android:visibility="gone"/>
         <TextView
@@ -50,6 +51,7 @@
             android:layout_marginTop="@dimen/pad_30"
             android:background="@drawable/selector_button_enabled"
             android:elevation="@dimen/pad_6"
+            android:text="proceed"
             android:gravity="center"
             android:visibility="gone"/>
         <TextView
@@ -58,6 +60,7 @@
             android:layout_height="@dimen/h_button"
             android:layout_marginTop="@dimen/pad_90"
             android:gravity="center"
+            android:text="@string/skip"
             android:textColor="@color/green_teal"
             android:textSize="@dimen/pad_16"/>
     </RelativeLayout>

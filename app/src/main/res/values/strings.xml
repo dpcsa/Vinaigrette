@@ -28,6 +28,8 @@
     <string name="attention">Внимание</string>
 
     <string name="contin">Продолжить</string>
+    <string name="skip">Пропустить знакомство</string>
+    <string name="proceed">Приступить</string>
 
     <string name="json_tutorial">[{\"text\":\"Талоны дешевле на 12%, чем на АЗС\",\"img\":\"tutorial_1\",\"skip\":\"Пропустить знакомство\",\"contin\":\"Продолжить\",\"proceed\":\"\"},
         {\"text\":\"Электронные талоны всегда с собой\",\"img\":\"tutorial_2\",\"skip\":\"Пропустить знакомство\",\"contin\":\"Продолжить\",\"proceed\":\"\"},
@@ -41,6 +43,7 @@
     <string name="sms_cometo">SMS придет на указаный номер</string>
     <string name="info_phone">Который хотите использовать или использовали для работы</string>
     <string name="enter">Войти</string>
+    <string name="enter_skip">Войти без авторизации</string>
     <string name="login">Логин</string>
     <string name="password">Пароль</string>
 

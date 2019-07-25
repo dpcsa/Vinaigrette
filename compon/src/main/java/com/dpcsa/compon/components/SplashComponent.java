@@ -36,17 +36,6 @@ public class SplashComponent extends BaseComponent {
                 iBase.startScreen(paramMV.main, false);
                 break;
         }
-
-//        if (paramMV.intro != null && ! preferences.getTutorial()) {
-//            preferences.setTutorial(true);
-//            iBase.startScreen(paramMV.intro, false);
-//        } else {
-//            if (paramMV.auth != null && preferences.getSessionToken().length() == 0) {
-//                iBase.startScreen(paramMV.auth, false);
-//            } else {
-//                iBase.startScreen(paramMV.main, false);
-//            }
-//        }
         iBase.backPressed();
     }
 

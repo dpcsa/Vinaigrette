@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 public class ComponPrefTool {
     private static final String PREFERENCES_NAME = "simple_app_prefs";
-    private static final String TUTORIAL = "tutorial";
+//    private static final String TUTORIAL = "tutorial";
     private static final String AUTH = "auth";
     private static final String USER_KEY = "user_key";
     private static final String COOKIE = "cookie";
@@ -80,13 +80,13 @@ public class ComponPrefTool {
         return getSharedPreferences().getInt(name, def);
     }
 
-    public void setTutorial(boolean value) {
-        getEditor().putBoolean(TUTORIAL, value).commit();
-    }
-
-    public boolean getTutorial() {
-        return getSharedPreferences().getBoolean(TUTORIAL, false);
-    }
+//    public void setTutorial(boolean value) {
+//        getEditor().putBoolean(TUTORIAL, value).commit();
+//    }
+//
+//    public boolean getTutorial() {
+//        return getSharedPreferences().getBoolean(TUTORIAL, false);
+//    }
 
     public void setAuth(boolean value) {
         getEditor().putBoolean(AUTH, value).commit();
