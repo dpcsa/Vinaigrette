@@ -17,6 +17,8 @@
     <color name="black">#000</color>
     <color name="black_50">#8000</color>
     <color name="text">#333</color>
+    <color name="gray_b">#bbb</color>
+
     <color name="green_teal">#0ab861</color>
     <color name="gunmetal">#515554</color>
     <color name="charcoal">#262a29</color>

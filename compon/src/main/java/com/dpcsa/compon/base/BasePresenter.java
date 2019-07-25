@@ -1,6 +1,8 @@
 package com.dpcsa.compon.base;
 
 import android.text.Html;
+import android.util.Log;
+
 import com.dpcsa.compon.network.CacheWork;
 import com.dpcsa.compon.param.AppParams;
 import com.dpcsa.compon.single.ComponGlob;

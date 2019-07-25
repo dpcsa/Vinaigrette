@@ -132,30 +132,38 @@ public class PagerVComponent extends BaseComponent {
                 int id = v.getId();
                 for (ViewHandler vh : navigator.viewHandlers) {
                     if (vh.viewId == id) {
-                        switch (vh.type) {
-                            case NAME_FRAGMENT:
-                                iBase.startScreen(vh.screen, false);
-                                break;
-                            case PREFERENCE_SET_VALUE:
-                                switch (vh.typePref) {
-                                    case STRING:
-                                        preferences.setNameString(vh.namePreference, vh.pref_value_string);
-                                        break;
-                                    case BOOLEAN:
-                                        preferences.setNameBoolean(vh.namePreference, vh.pref_value_boolean);
-                                        break;
-                                }
-                                break;
-                            case BACK:
-                                iBase.backPressed();
-                                break;
-                            case PAGER_PLUS:
-                                int posit = pager.getCurrentItem() + 1;
-                                if (posit < count) {
-                                    pager.setCurrentItem(posit);
-                                }
-                                break;
+                        if (vh.type == ViewHandler.TYPE.PAGER_PLUS) {
+                            int posit = pager.getCurrentItem() + 1;
+                            if (posit < count) {
+                                pager.setCurrentItem(posit);
+                            }
+                        } else {
+                            clickView.onClick(v);
                         }
+//                        switch (vh.type) {
+//                            case NAME_FRAGMENT:
+//                                iBase.startScreen(vh.screen, false);
+//                                break;
+//                            case PREFERENCE_SET_VALUE:
+//                                switch (vh.typePref) {
+//                                    case STRING:
+//                                        preferences.setNameString(vh.namePreference, vh.pref_value_string);
+//                                        break;
+//                                    case BOOLEAN:
+//                                        preferences.setNameBoolean(vh.namePreference, vh.pref_value_boolean);
+//                                        break;
+//                                }
+//                                break;
+//                            case BACK:
+//                                iBase.backPressed();
+//                                break;
+//                            case PAGER_PLUS:
+//                                int posit = pager.getCurrentItem() + 1;
+//                                if (posit < count) {
+//                                    pager.setCurrentItem(posit);
+//                                }
+//                                break;
+//                        }
                     }
                 }
             }

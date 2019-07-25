@@ -9,8 +9,11 @@ public class MyParams extends AppParams {
 
         youtubeApiKey = R.string.youtube_api_key;
         progressLayoutId = R.layout.dialog_progress;
+        errorDialogLayoutId = R.layout.dialog_error;
+        errorDialogCancelId = R.id.cancel;
+
         idStringDefaultErrorTitle = R.string.er_title_def;
-        errorDialogViewId = R.id.error_dialog;
+//        errorDialogViewId = R.id.error_dialog;
         idStringERRORINMESSAGE = R.string.er_message;
         idStringNOCONNECTION_TITLE = R.string.er_connect_title;
         idStringNOCONNECTIONERROR = R.string.er_connect;

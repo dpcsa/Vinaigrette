@@ -12,7 +12,9 @@ public class ComponPrefTool {
     private static final String TOKEN = "token";
     private static final String STATUS_COLOR = "STATUS_COLOR";
     private static final String LOCALE = "locale";
-    private static final String UPDATE_DB_DATE = "UpdateDBDate";
+    private static final String UPDATE_DB_DATE = "UpdateDBDate",
+            SPLASH_SCREEN = "SPLASH_SCREEN",
+            SPLASH_NAME_SCREEN = "SPLASH_NAME_SCREEN";
 
     public void setUpdateDBDate(String value) {
         getEditor().putString(UPDATE_DB_DATE, value).commit();
@@ -46,8 +48,20 @@ public class ComponPrefTool {
         getEditor().putString(name, value).commit();
     }
 
-    public void setNameInt(String name, int value) {
-        getEditor().putInt(name, value).commit();
+    public void setSplashNameScreen(String value) {
+        getEditor().putString(SPLASH_NAME_SCREEN, value).commit();
+    }
+
+    public String getSplashNameScreen() {
+        return getSharedPreferences().getString(SPLASH_NAME_SCREEN, "");
+    }
+
+    public void setSplashScreen(int value) {
+        getEditor().putInt(SPLASH_SCREEN, value).commit();
+    }
+
+    public int getSplashScreen() {
+        return getSharedPreferences().getInt(SPLASH_SCREEN, 0);
     }
 
     public boolean getNameBoolean(String name) {
@@ -56,6 +70,10 @@ public class ComponPrefTool {
 
     public String getNameString(String name) {
         return getSharedPreferences().getString(name, "");
+    }
+
+    public void setNameInt(String name, int value) {
+        getEditor().putInt(name, value).commit();
     }
 
     public int getNameInt(String name, int def) {

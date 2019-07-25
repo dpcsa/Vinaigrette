@@ -12,6 +12,21 @@
     <string name="er_server_error">Ошибка сервера</string>
     <string name="er_json_syntax">Синтаксическая ошибка в json</string>
 
+    // Error text
+    <string name="er_filled">Нужно заполнить</string>
+    <string name="er_lenght">Количество знаков в поле\u0020</string>
+    <string name="er_email">Неправильный адрес email</string>
+    <string name="er_phone">Неправильный номер телефона</string>
+    <string name="er_login">Неверный логин</string>
+    <string name="er_password">Неверный пароль</string>
+    <string name="er_surname">Поле Фамилия заполненно неправильно</string>
+    <string name="er_name">Поле Имя заполненно неправильно</string>
+    <string name="er_patronymic">Поле Отчество заполненно неправильно</string>
+    <string name="er_email_r">Поле Email заполненно неправильно</string>
+    <string name="er_city">Поле Город заполненно неправильно</string>
+    <string name="er_phone_r">Поле Телефон заполненно неправильно</string>
+    <string name="attention">Внимание</string>
+
     <string name="contin">Продолжить</string>
 
     <string name="json_tutorial">[{\"text\":\"Талоны дешевле на 12%, чем на АЗС\",\"img\":\"tutorial_1\",\"skip\":\"Пропустить знакомство\",\"contin\":\"Продолжить\",\"proceed\":\"\"},
@@ -25,5 +40,8 @@
     <string name="code_sms">Код подтверждения из SMS</string>
     <string name="sms_cometo">SMS придет на указаный номер</string>
     <string name="info_phone">Который хотите использовать или использовали для работы</string>
+    <string name="enter">Войти</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
 
 </resources>

@@ -333,8 +333,17 @@ public class Screen<T>{
         ParamComponent paramComponent = new ParamComponent();
         paramComponent.type = ParamComponent.TC.SPLASH;
         paramComponent.intro = intro;
+        if (paramComponent.intro == null) {
+            paramComponent.intro = "";
+        }
         paramComponent.auth = auth;
+        if (paramComponent.auth == null) {
+            paramComponent.auth = "";
+        }
         paramComponent.main = main;
+        if (paramComponent.main == null) {
+            paramComponent.main = "";
+        }
         listComponents.add(paramComponent);
         return this;
     }
