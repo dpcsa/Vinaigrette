@@ -15,17 +15,17 @@
     // Error text
     <string name="er_filled">Нужно заполнить</string>
     <string name="er_lenght">Количество знаков в поле\u0020</string>
-    <string name="er_email">Неправильный адрес email</string>
-    <string name="er_phone">Неправильный номер телефона</string>
-    <string name="er_login">Неверный логин</string>
-    <string name="er_password">Неверный пароль</string>
-    <string name="er_surname">Поле Фамилия заполненно неправильно</string>
-    <string name="er_name">Поле Имя заполненно неправильно</string>
-    <string name="er_patronymic">Поле Отчество заполненно неправильно</string>
-    <string name="er_email_r">Поле Email заполненно неправильно</string>
-    <string name="er_city">Поле Город заполненно неправильно</string>
-    <string name="er_phone_r">Поле Телефон заполненно неправильно</string>
+    <!--<string name="er_email">Неправильный адрес email</string>-->
+    <!--<string name="er_phone">Неправильный номер телефона</string>-->
+    <!--<string name="er_login">Неверный логин</string>-->
+    <!--<string name="er_password">Неверный пароль</string>-->
+    <!--<string name="er_surname">Поле Фамилия заполненно неправильно</string>-->
+    <!--<string name="er_name">Поле Имя заполненно неправильно</string>-->
+    <!--<string name="er_patronymic">Поле Отчество заполненно неправильно</string>-->
+    <!--<string name="er_city">Поле Город заполненно неправильно</string>-->
+    <!--<string name="er_phone_r">Поле Телефон заполненно неправильно</string>-->
     <string name="attention">Внимание</string>
+    <string name="error_ed">Ошибка</string>
 
     <string name="contin">Продолжить</string>
     <string name="skip">Пропустить знакомство</string>
@@ -37,14 +37,20 @@
         {\"text\":\"Навигатор укажет путь к ближайшей заправке\",\"img\":\"tutorial_4\",\"skip\":\"\",\"contin\":\"\",\"proceed\":\"Приступить\"}]</string>
 
 // AUTH
-    <string name="begining">Начало работы</string>
     <string name="number_phone">Номер телефона</string>
-    <string name="code_sms">Код подтверждения из SMS</string>
-    <string name="sms_cometo">SMS придет на указаный номер</string>
-    <string name="info_phone">Который хотите использовать или использовали для работы</string>
+    <string name="auth">Авторизация</string>
+    <string name="register">Регистрация</string>
     <string name="enter">Войти</string>
     <string name="enter_skip">Войти без авторизации</string>
     <string name="login">Логин</string>
     <string name="password">Пароль</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="source_photo">Выбери источник</string>
+
+    <string name="surname_z">Фамилия</string>
+    <string name="name_z">Имя</string>
+    <string name="patronymic_z">Отчество</string>
+    <string name="your_phone_z">Ваш телефон</string>
+    <string name="email_z">Email</string>
 
 </resources>

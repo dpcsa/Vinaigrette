@@ -25,6 +25,8 @@
     <declare-styleable name="Simple">
         <attr name="itemLayoutId"/>
         <attr name="indicator" format="reference"/>
+        <attr name="idShowPassword" format="reference"/>
+        <attr name="idHidePassword" format="reference"/>
         <attr name="countryView" format="reference"/>
         <attr name="mask" format="string"/>
         <attr name="imageId" format="reference"/>

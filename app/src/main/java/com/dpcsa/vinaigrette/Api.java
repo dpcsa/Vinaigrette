@@ -1,5 +1,6 @@
 package com.dpcsa.vinaigrette;
 
 public class Api {
-    public static final String LOGIN = "client/login";
+    public static final String LOGIN = "auth/login",
+            REGISTER = "auth/register";
 }

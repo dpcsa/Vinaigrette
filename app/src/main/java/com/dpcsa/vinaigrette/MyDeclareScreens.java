@@ -5,7 +5,7 @@ import com.dpcsa.compon.base.DeclareScreens;
 public class MyDeclareScreens extends DeclareScreens {
 
     public final static String SPLASH = "splash", INTRO = "INTRO", AUTH = "auth", MAIN = "main",
-            AUTH_PHONE = "AUTH_PHONE", AUTH_CODE = "AUTH_CODE";
+            LOGIN = "LOGIN", REGISTRATION = "REGISTRATION";
 
     @Override
     public void declare() {
@@ -28,15 +28,23 @@ public class MyDeclareScreens extends DeclareScreens {
 //                                handler(R.id.contin, VH.PAGER_PLUS)));
 
         activity(AUTH, R.layout.activity_auth).animate(AS.RL)
-                .fragmentsContainer(R.id.content_frame, AUTH_PHONE);
+                .fragmentsContainer(R.id.content_frame, LOGIN);
 
-        fragment(AUTH_PHONE, R.layout.fragment_auth_phone)
+        fragment(LOGIN, R.layout.fragment_login)
                 .component(TC.PANEL_ENTER, null,
                         view(R.id.panel),
                         navigator(handler(R.id.done, VH.CLICK_SEND, model(POST, Api.LOGIN, "login,password"),
-                                after(start(AUTH_CODE)), true, R.id.login, R.id.password),
+                                after(handler(R.id.enter_skip, VH.NEXT_SCREEN_SPLASH)), true, R.id.login, R.id.password),
+                                start(R.id.register, REGISTRATION),
                                 handler(R.id.enter_skip, VH.NEXT_SCREEN_SPLASH)), 0);
 
+        fragment(REGISTRATION, R.layout.fragment_registration)
+                .navigator(back(R.id.back))
+                .componentPhoto(R.id.cli, new int[] {R.id.blur, R.id.photo}, R.string.source_photo)
+                .component(TC.PANEL_ENTER, null,
+                        view(R.id.panel),
+                        navigator(handler(R.id.done, VH.CLICK_SEND, model(POST, Api.REGISTER, "login,password,surname,name,second_name,phone,photo,email"),
+                                after(start(MAIN)), true, R.id.login, R.id.password)), 0) ;
 
         activity(MAIN, R.layout.activity_main).animate(AS.RL);
     }

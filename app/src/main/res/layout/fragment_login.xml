@@ -19,16 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerInParent="true"
-            android:text="@string/begining" />
-
-        <ImageView
-            android:id="@+id/question"
-            android:layout_width="@dimen/h_button"
-            android:layout_height="@dimen/h_button"
-            android:layout_marginRight="@dimen/pad_10"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/question" />
-
+            android:text="@string/auth" />
     </RelativeLayout>
 
     <LinearLayout
@@ -60,7 +51,7 @@
                 android:singleLine="true"
                 android:text="dolg"
                 app:minLength="3"
-                app:textError="@string/er_login"/>
+                app:textError="@string/error_ed"/>
         </android.support.design.widget.TextInputLayout>
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -86,8 +77,19 @@
                 android:singleLine="true"
                 android:text="123321"
                 app:minLength="6"
-                app:textError="@string/er_password"/>
+                app:textError="@string/error_ed"/>
         </android.support.design.widget.TextInputLayout>
+
+        <com.dpcsa.compon.custom_components.EditPassword
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/styleEditText"
+            android:layout_marginTop="30dp"
+            style="@style/st_16_black"
+            app:idShowPassword="@drawable/eye_open"
+            app:idHidePassword="@drawable/eye_close"
+            android:layout_marginLeft="@dimen/pad_36"
+            android:layout_marginRight="@dimen/pad_36"/>
 
         <TextView
             android:id="@+id/done"
@@ -99,6 +101,15 @@
             android:text="@string/enter"/>
 
         <TextView
+            android:id="@+id/register"
+            style="@style/st_button_1"
+            android:letterSpacing="0.14"
+            android:layout_marginTop="@dimen/pad_40"
+            android:layout_marginLeft="@dimen/pad_36"
+            android:layout_marginRight="@dimen/pad_36"
+            android:text="@string/sign_up"/>
+
+        <TextView
             android:id="@+id/enter_skip"
             android:layout_width="match_parent"
             android:layout_height="@dimen/h_button"
@@ -107,64 +118,5 @@
             android:text="@string/enter_skip"
             android:textColor="@color/green_teal"
             android:textSize="@dimen/pad_16"/>
-
-
     </LinearLayout>
-
-    <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="@dimen/pad_40"-->
-        <!--android:layout_marginLeft="@dimen/pad_30"-->
-        <!--android:layout_marginRight="@dimen/pad_30"-->
-        <!--style="@style/st_16_black"-->
-        <!--android:text="@string/number_phone"/>-->
-
-    <!--<LinearLayout-->
-        <!--android:id="@+id/panel"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:orientation="vertical">-->
-
-        <!--<com.dpcsa.compon.custom_components.EditPhone-->
-            <!--android:id="@+id/phone"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginLeft="@dimen/pad_30"-->
-            <!--android:layout_marginRight="@dimen/pad_30"-->
-            <!--android:layout_marginTop="@dimen/pad_10"-->
-            <!--android:theme="@style/BaseEditTextStyle"-->
-            <!--android:inputType="number"-->
-            <!--android:textColor="@color/black"-->
-            <!--android:textColorHint="@color/black_50"-->
-            <!--android:textSize="20dp"-->
-            <!--app:mask="+380 __ ___ __ __"-->
-            <!--app:imageId="@drawable/del"-->
-            <!--app:heightLine="5dp"-->
-            <!--app:selectorLine="@drawable/selector_edit_text"/>-->
-
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="@dimen/pad_18"-->
-            <!--android:layout_marginLeft="@dimen/pad_30"-->
-            <!--android:layout_marginRight="@dimen/pad_30"-->
-            <!--style="@style/st_14_black_50_sp8"-->
-            <!--android:text="@string/info_phone"/>-->
-
-        <!--<TextView-->
-            <!--android:id="@+id/done"-->
-            <!--style="@style/st_button"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="@dimen/h_bottom"-->
-            <!--android:layout_marginLeft="@dimen/pad_30"-->
-            <!--android:layout_marginRight="@dimen/pad_30"-->
-            <!--android:layout_marginTop="@dimen/pad_72"-->
-            <!--android:background="@drawable/selector_button"-->
-            <!--android:elevation="@dimen/pad_6"-->
-            <!--android:gravity="center"-->
-            <!--android:enabled="false"-->
-            <!--android:text="@string/contin"/>-->
-    <!--</LinearLayout>-->
-
 </LinearLayout>

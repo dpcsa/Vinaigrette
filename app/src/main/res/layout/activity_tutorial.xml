@@ -30,29 +30,21 @@
 
         <TextView
             android:id="@+id/contin"
-            style="@style/st_button"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/h_bottom"
+            style="@style/st_button_1"
             android:layout_marginRight="@dimen/pad_30"
             android:layout_marginLeft="@dimen/pad_30"
             android:layout_marginTop="@dimen/pad_30"
-            android:background="@drawable/selector_button_enabled"
             android:elevation="@dimen/pad_6"
             android:text="@string/contin"
-            android:gravity="center"
             android:visibility="gone"/>
         <TextView
             android:id="@+id/proceed"
-            style="@style/st_button"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/h_bottom"
+            style="@style/st_button_1"
             android:layout_marginRight="@dimen/pad_30"
             android:layout_marginLeft="@dimen/pad_30"
             android:layout_marginTop="@dimen/pad_30"
-            android:background="@drawable/selector_button_enabled"
             android:elevation="@dimen/pad_6"
-            android:text="proceed"
-            android:gravity="center"
+            android:text="@string/proceed"
             android:visibility="gone"/>
         <TextView
             android:id="@+id/skip"

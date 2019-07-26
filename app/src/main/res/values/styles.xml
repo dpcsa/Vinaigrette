@@ -8,10 +8,10 @@
         <item name="colorAccent">@color/accent</item>
     </style>
 
-    <!--<style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
-        <!--<item name="android:windowBackground">@drawable/splash</item>-->
-        <!--<item name="android:windowFullscreen">false</item>-->
-    <!--</style>-->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
 
     <style name="st_button">
         <item name="android:textSize">18sp</item>
@@ -27,7 +27,7 @@
         <item name="android:textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
         <item name="android:clickable">true</item>
-        <item name="android:background">@drawable/selector_button_1</item>
+        <item name="android:background">@drawable/selector_button</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/white</item>
     </style>

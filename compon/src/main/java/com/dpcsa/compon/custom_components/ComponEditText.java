@@ -134,32 +134,12 @@ public class ComponEditText extends AppCompatEditText implements IComponent, IVa
             if (minValue != Double.MIN_VALUE || maxValue != Double.MAX_VALUE) {
                 typeValidate = DIAPASON;
                 isVerify = true;
-//                addTextChangedListener(new EditTextWatcher());
             }
         }
-//        if (onlyLetters) {
-//            setFilters(new InputFilter[] { new InputFilter.LengthFilter(maxLength),
-//                    new InputFilter() {
-//                        @Override
-//                        public CharSequence filter(CharSequence source, int start,
-//                                                   int end, Spanned dest, int dstart, int dend) {
-//                            if(source.equals("")){ // for backspace
-//                                return source;
-//                            }
-//                            if(source.toString().matches("[a-zA-ZёЁїЇіІ а-яА-Я-]+")){
-//                                return source;
-//                            }
-//                            return "";
-//                        }
-//                    }
-//            });
-//        }
 
         oldString = "";
         selectPos = 0;
         addTextChangedListener(new EditTextWatcher());
-//        setFocusable(true);
-//        setFocusableInTouchMode(true);
         getTextInputLayout();
         setOnFocusChangeListener(noFocus);
     }
