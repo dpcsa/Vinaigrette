@@ -16,18 +16,18 @@ import com.dpcsa.compon.json_simple.ListRecords;
 import com.dpcsa.compon.json_simple.Record;
 import com.dpcsa.compon.json_simple.WorkWithRecordsAndViews;
 
-public class PagerSimple extends ViewPager implements IComponent {
+public class ComponPager extends ViewPager implements IComponent {
     private int ITEM_LAYOUT_ID, INDICATOR;
     private Context context;
     protected ListRecords items;
     private PagerIndicator indicator;
 
-    public PagerSimple(Context context) {
+    public ComponPager(Context context) {
         super(context);
         this.context = context;
     }
 
-    public PagerSimple(Context context, AttributeSet attrs) {
+    public ComponPager(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
         setAttribute(attrs);
